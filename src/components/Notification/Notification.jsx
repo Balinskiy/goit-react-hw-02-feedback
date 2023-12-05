@@ -1,5 +1,7 @@
+import { TitleSecondary } from './Notification.styled';
+
 function Notification({ message }) {
-  return <h2>{message}</h2>;
+  return <TitleSecondary>{message}</TitleSecondary>;
 }
 
 export default Notification;

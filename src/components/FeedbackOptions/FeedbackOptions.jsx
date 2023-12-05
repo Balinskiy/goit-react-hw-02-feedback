@@ -1,16 +1,16 @@
-import { Button } from './FeedbackOptions.styled';
+import { Button, LiButton, UlButton } from './FeedbackOptions.styled';
 
 function FeedbackOptions({ options, onLeaveFeedback }) {
   return (
-    <ul>
+    <UlButton>
       {options.map(option => {
         return (
-          <li key={option}>
+          <LiButton key={option}>
             <Button onClick={() => onLeaveFeedback(option)}>{option}</Button>
-          </li>
+          </LiButton>
         );
       })}
-    </ul>
+    </UlButton>
   );
 }
 

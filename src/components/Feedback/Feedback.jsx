@@ -39,7 +39,7 @@ class Feedback extends Component {
           />
         </Section>
 
-        <Section title="Statistics">
+        <Section title="Statistics:">
           {this.total() > 0 ? (
             <Statistics
               good={good}
